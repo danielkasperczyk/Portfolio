@@ -1,0 +1,897 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Fjalla One", sans-serif;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* HEADER */
+header {
+  position: sticky;
+  background: white;
+  top: 0;
+  box-shadow: 0px 0px 26px 0px rgba(189, 189, 189, 1);
+  z-index: 1;
+}
+.logo {
+  text-transform: uppercase;
+}
+.text-container {
+  width: 1400px;
+  margin: auto;
+}
+.headerGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+}
+.header-text p {
+  margin-right: 3rem;
+}
+.phoneNumber {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.phoneNumber p {
+  flex-grow: 2;
+  align-self: center;
+}
+.fa-phone {
+  background: #ff1e4f;
+  padding: 1.5rem;
+  color: white;
+}
+nav {
+  text-align: center;
+  padding: 1rem;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+nav ul li a:hover {
+  color: #ff1e4f;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  font-size: 4rem;
+}
+
+/*MAIN*/
+#main {
+  background: url(img/weight.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  position: relative;
+  min-width: 100%;
+  height: 53rem;
+  align-items: center;
+}
+.mainText {
+  width: 50%;
+  margin: auto;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  width: 100%;
+}
+.mainText h1 {
+  font-size: 3rem;
+}
+.mainText h1,
+.mainText p {
+  padding: 1rem;
+}
+/*BOX SECTION */
+.boxSection {
+  text-align: center;
+  margin: 0 0 3rem 0;
+}
+.boxSectionText {
+  padding: 3rem 0;
+}
+.boxSectionText h1 {
+  font-size: 40px;
+}
+.boxContainer {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  border-radius: 3%;
+  box-shadow: 0px 21px 62px -17px rgba(255, 30, 79, 1);
+  width: 350px;
+  margin: 0 0.5rem;
+  padding: 1rem;
+}
+.box img {
+  padding: 15px 0;
+}
+.box p {
+  padding: 10px 10px;
+}
+/*CALCULATE*/
+.calculate {
+  background-color: #ff1e4f;
+  text-align: center;
+  color: white;
+}
+.calculate h1 {
+  padding: 1.5rem 0 0.5rem;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+.calculate p {
+  padding: 1rem 0 1rem 0rem;
+}
+.form {
+  padding: 2rem 0rem 3rem 0rem;
+}
+.form input {
+  padding: 0.8rem 3rem;
+  background: #ff1e4f;
+  border: 1px solid #bcbcbc;
+  text-align: center;
+  color: #fff;
+}
+.form input::placeholder {
+  color: #f7f7f7;
+  text-align: center;
+}
+.form input {
+  margin: 0 1rem 0 0;
+}
+#formBtn {
+  text-decoration: none;
+  color: #000000;
+  background: #ffffff;
+  padding: 0.8rem 3rem;
+  border-radius: 25px;
+  border: 1px solid white;
+}
+/*COURSES*/
+#courses {
+  text-align: center;
+  width: 1200px;
+  margin: auto;
+  padding: 3rem 0;
+}
+.coursesText {
+  padding: 0rem 0rem 4rem 0rem;
+  line-height: 1.5;
+}
+.coursesText h1 {
+  font-size: 2rem;
+}
+.coursesBoxContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 40px;
+}
+.container {
+  width: 100%;
+  height: 225px;
+  overflow: hidden;
+}
+.zoomIn {
+  width: 100%;
+  height: 100%;
+}
+.coursesBox img {
+  width: 100%;
+  height: 225px;
+}
+.zoomIn img:hover {
+  animation: zoomEffect 1s forwards;
+}
+.coursesAvailable {
+  display: flex;
+  position: absolute;
+  background: #ff1e4f;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-left: 1.5rem;
+  margin-top: -4rem;
+}
+.coursesBox h4 {
+  padding: 10px 0;
+  text-align: left;
+  font-size: 20px;
+}
+.coursesBox span {
+  float: right;
+  color: #ff1e4f;
+}
+/*REVOLUTION*/
+.revolution {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #191919;
+  align-items: center;
+}
+.revolution img {
+  width: 100%;
+  height: auto;
+}
+.revoultionText p:nth-child(1) {
+  color: #6b6b6b;
+  padding: 0rem 3rem;
+}
+.revoultionText p:nth-child(2) {
+  color: #ff1e4f;
+  padding: 0rem 3rem;
+  font-size: 32px;
+}
+.revoultionText p:nth-child(3) {
+  color: #6b6b6b;
+  padding: 1rem 3rem;
+}
+
+/*TABLE*/
+#table {
+  text-align: center;
+  padding: 0rem 0rem 5rem 0rem;
+}
+#table h1 {
+  margin-top: 3rem;
+  font-size: 42px;
+}
+table {
+  margin: 5rem auto 0rem;
+  width: calc(100% - 30%);
+  text-align: center;
+  color: #999999;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+tr:nth-child(1) {
+  background: #e0e0e0;
+  color: black;
+}
+th {
+  padding: 10px;
+}
+td {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+/*TRAINERS*/
+#trainersSection {
+  background: #fdf9ff;
+  text-align: center;
+}
+#trainersSection h1 {
+  font-size: 32px;
+  padding: 5rem 0 0.5rem 0;
+}
+#trainersSection p {
+  font-size: 12px;
+  padding-bottom: 5rem;
+}
+.trainersGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: " . trainerA trainerB trainerC trainerD .";
+  grid-gap: 20px;
+}
+.trainerBox h3 {
+  margin-top: 1rem;
+}
+.trainerBox p {
+  color: #8c8c8c;
+  position: relative;
+}
+.trainersGrid img {
+  max-width: 100%;
+  height: auto;
+}
+.trainer-a {
+  grid-area: trainerA;
+}
+.trainer-b {
+  grid-area: trainerB;
+}
+.trainer-c {
+  grid-area: trainerC;
+}
+.trainer-d {
+  grid-area: trainerD;
+}
+/*PLANS*/
+.trainerGrid hr {
+  color: grey;
+}
+.plans {
+  text-align: center;
+  padding: 5rem 0;
+}
+.plansText {
+  line-height: 1.5;
+  padding: 0 0 4rem 0;
+}
+.plansText h1 {
+  font-size: 2.5rem;
+}
+.plansTitle p {
+  color: #bababa;
+}
+
+.plansGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: " plan-a plan-b plan-c ";
+  grid-column-gap: 2rem;
+  height: auto;
+}
+.plan-a {
+  grid-area: plan-a;
+}
+.plan-b {
+  grid-area: plan-b;
+}
+.plan-c {
+  grid-area: plan-c;
+}
+.boxPlan {
+  background-color: #fdf9ff;
+  padding: 2rem 0 0 0;
+}
+.boxPlan li {
+  list-style-type: none;
+  color: #bababa;
+}
+.boxPlan a {
+  text-decoration: none;
+  color: black;
+}
+.flexPlansPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5;
+  padding: 1.5rem 2rem;
+}
+.pText {
+  padding: 1.5rem;
+  border-top: 1px solid #bababa;
+  border-bottom: 1px solid #bababa;
+  color: #bababa;
+}
+.offers {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+  line-height: 2;
+  align-items: flex-start;
+}
+.plansBtn {
+  justify-self: start;
+  background-color: #000;
+  padding: 1rem 1.5rem;
+  border: none;
+  margin-top: 1rem;
+}
+.plansBtn a {
+  color: white;
+}
+.colorClass {
+  padding: 0 0 2rem 0;
+}
+
+/*MEMBER*/
+#member {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/member.jpeg);
+  padding: 10rem;
+  background-repeat: no-repeat;
+  background-position: 20% 20%;
+  background-size: auto;
+}
+.memberContainer {
+  color: #ffffff;
+  filter: brightness(100%);
+}
+.memberContainer h1 {
+  color: white;
+  font-size: 40px;
+  padding: 0 0 1rem 0;
+}
+.memberContainer p {
+  margin-bottom: 2rem;
+}
+.memberContainer a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  background: #ff1e4f;
+  border: 1px solid #ff1e4f;
+  padding: 15px 25px;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+/*ABOUT / CONTACT */
+.contact {
+  max-height: 100%;
+}
+.contactGrid {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 15% repeat(3, 1fr) 15%;
+  grid-template-areas: ". about contact newsletter .";
+  grid-gap: 5px;
+  justify-items: start;
+}
+.contactGrid h3 {
+  margin-bottom: 1rem;
+}
+.about {
+  grid-area: about;
+}
+.aboutText {
+  width: 80%;
+}
+.contact {
+  grid-area: contact;
+}
+.contact p {
+  margin-bottom: 0.7rem;
+  width: 80%;
+}
+.contact p,
+.newsletter p,
+.aboutText p {
+  width: 250px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.number {
+  color: #ff1e4f;
+  font-size: 20px;
+  font-weight: 600;
+}
+.newsletter {
+  grid-area: newsletter;
+}
+.newsletter p {
+  width: 80%;
+}
+.newsletter input {
+  margin-top: 1rem;
+  background: #fdf9ff;
+  border: none;
+  width: 70%;
+  padding: 0.7rem;
+  border-radius: 25px;
+  color: #6b6b6b;
+}
+#emailBtn {
+  background: #ff1e4f;
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  position: absolute;
+  margin-top: 16px;
+  margin-left: -2%;
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 64%;
+  margin: auto;
+  padding: 3rem;
+}
+.icons {
+  width: auto;
+}
+footer i {
+  padding: 15px;
+  background: black;
+  color: #bcbcbc;
+  border-radius: 25px;
+}
+
+/*Animations*/
+/*Form Btn*/
+#formBtn:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  animation: button 0.3s;
+}
+@keyframes button {
+  from {
+    background: #ffffff;
+    color: black;
+  }
+  to {
+    background: transparent;
+    color: white;
+  }
+}
+/*Table*/
+
+tr:nth-child(2):hover {
+  background-color: #ff1e4f;
+  color: white;
+  animation: table 0.5s;
+}
+tr:nth-child(3):hover {
+  background-color: #ff1e4f;
+  color: white;
+  animation: table 0.5s;
+}
+tr:nth-child(4):hover {
+  background-color: #ff1e4f;
+  color: white;
+  animation: table 0.5s;
+}
+tr:nth-child(5):hover {
+  background-color: #ff1e4f;
+  color: white;
+  animation: table 0.5s;
+}
+tr:nth-child(6):hover {
+  background-color: #ff1e4f;
+  color: white;
+  animation: table 0.5s;
+}
+tr:nth-child(7):hover {
+  background-color: #ff1e4f;
+  color: white;
+  animation: table 0.3s;
+}
+@keyframes table {
+  from {
+    color: #999999;
+  }
+  to {
+    background-color: #ff1e4f;
+    color: white;
+  }
+}
+
+/*Plans*/
+.boxPlan:hover .colorClass {
+  background: #ff1e4f;
+  animation: colorBackground 0.4s;
+}
+.boxPlan:hover .colorClass p,
+.boxPlan:hover .colorClass li {
+  color: white;
+}
+.boxPlan:hover .plansBtn {
+  background: white;
+  animation: colorBtn 0.4s;
+}
+.boxPlan:hover .plansBtn a {
+  color: black;
+  animation: colorText 0.4s;
+}
+.plansBtn:hover #move {
+  position: relative;
+  animation: move 0.4s;
+  left: 15px;
+}
+@keyframes colorBackground {
+  from {
+    background: #fdf9ff;
+  }
+  to {
+    background: #ff1e4f;
+  }
+}
+@keygrames colorBtn {
+  from {
+    background: black;
+  }
+  to {
+    background: white;
+  }
+}
+@keyframes colorText {
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
+}
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 15px;
+  }
+}
+/*Images*/
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+@media (max-width: 1300px) {
+  .text-container {
+    width: 80%;
+  }
+  #courses {
+    width: 900px;
+  }
+  .plansGrid {
+    grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
+  }
+  table {
+    width: 80%;
+  }
+  .trainersGrid {
+    grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+    grid-template-areas: ". trainerA trainerB trainerC trainerD . ";
+  }
+  .contactGrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "about contact newsletter";
+  }
+  .plansGrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: " plan-a plan-b plan-c ";
+    margin-left: 2rem;
+    margin-right: 2rem;
+    grid-column-gap: 2rem;
+  }
+  .revoultionText p:first-child {
+    padding: 1rem 3rem 0.5rem;
+  }
+  .revoultionText p:nth-child(3) {
+    padding: 0 3rem;
+  }
+  #table {
+    padding: 0 0 2rem 0;
+  }
+  table {
+    margin: 2rem auto;
+  }
+  #trainersSection h1 {
+    font-size: 2rem;
+    padding: 2rem 0 0;
+  }
+  #trainersSection p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+  .plans {
+    padding: 2rem 0;
+  }
+  .wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1000px) {
+  .wrapper {
+    width: 750px;
+  }
+  #courses {
+    width: auto;
+  }
+  .text-container {
+    width: 100%;
+  }
+  .header-text p {
+    margin-left: 1rem;
+  }
+  .trainersGrid img {
+    min-width: 160px;
+  }
+  .coursesBoxContainer {
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+  }
+  .revoultionText p:first-child {
+    margin: 0;
+  }
+  .plansGrid {
+    margin: 0;
+  }
+  .revolution {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .revoultionText p {
+    margin-top: 2rem;
+  }
+  .revoultionText p:nth-child(2) {
+    margin: 0;
+  }
+  .contact p,
+  .newsletter p,
+  .aboutText p {
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .wrapper {
+    max-width: 300px;
+  }
+  #table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  table {
+    margin: 1rem 0;
+  }
+  table th,
+  table td {
+    padding: 0.2rem;
+  }
+  .header-text,
+  .phoneNumber,
+  nav {
+    display: none;
+  }
+  header {
+    min-height: 5rem;
+  }
+  #main {
+    background-position: 35% 10%;
+  }
+  .navBar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #ff1e4f;
+    margin: 5px;
+  }
+  #positionNav {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+  }
+  .boxContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .coursesBoxContainer {
+    grid-template-columns: 1fr;
+    margin: 0 1rem;
+  }
+  .box {
+    width: calc(100% - 50px);
+    padding: 2rem 0;
+    max-width: 300px;
+    margin-bottom: 3rem;
+  }
+  input[type="text"] {
+    margin: 0;
+    width: 45%;
+    margin-top: 1rem;
+  }
+  .form {
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+  #courses {
+    max-width: 500px;
+  }
+  #formBtn {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .revolution {
+    grid-template-columns: 1fr;
+  }
+  .revoultionText {
+    padding: 2rem 0;
+  }
+  .trainersGrid {
+    display: block;
+  }
+  .plansGrid {
+    display: block;
+  }
+  .boxPlan {
+    margin: 2rem 0;
+    padding: 1rem 0;
+  }
+
+  .flexPlansPrice {
+    padding: 0.5rem 2rem;
+  }
+  #member {
+    background-position: 40% 20%;
+    padding: 5rem;
+  }
+  .contactGrid {
+    display: block;
+    padding: 2rem;
+  }
+  .about,
+  .contact,
+  .newsletter {
+    margin-bottom: 2rem;
+  }
+  .about p,
+  .contact p,
+  .newsletter p {
+    font-weight: 300;
+    width: 50%;
+    font-size: 1rem;
+  }
+  footer {
+    padding: 2rem;
+    margin: 0;
+    display: block;
+  }
+  .icons {
+    margin-top: 2rem;
+  }
+}

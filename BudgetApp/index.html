@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/f7eb414524.js"></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Finance App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="color margin-y-med">
+        <div class="color__slider">
+          <div class="color__slider-dot"></div>
+        </div>
+      </div>
+      <div class="balance">
+        <h2 class="text-big margin-y-med">My Balance</h2>
+        <i class="fas fa-piggy-bank fa-7x balance__icon"></i>
+        <p class="text-med text-bold margin-bottom-small">
+          $<span class="balance__sum">0</span>
+        </p>
+      </div>
+      <div class="bank margin-y-small">
+        <div class="bank__income">
+          <h2 class="text-big margin-y-med">Income</h2>
+          <i class="fas fa-dollar-sign bank__icon"></i>
+          <p class="text-med text-bold margin-bottom-small">
+            $<span class="income">0</span>
+          </p>
+        </div>
+        <div class="bank__spent">
+          <h2 class="text-big margin-y-med">Spent</h2>
+          <i class="fas fa-cart-arrow-down bank__icon"></i>
+          <p class="text-med text-bold margin-bottom-small">
+            $<span class="spent">0</span>
+          </p>
+        </div>
+      </div>
+      <div class="type margin-bottom-small">
+        <div class="type__slider">
+          <div class="type__slider-dot"></div>
+        </div>
+      </div>
+      <div class="things">
+        <input
+          type="text"
+          class="things__input things__field"
+          placeholder="Income/Spent"
+        />
+        <input
+          type="text"
+          class="things__cost things__field"
+          placeholder="Value"
+        />
+        <button class="things__btn">Add</button>
+      </div>
+      <div class="items">
+        <div class="items__inc"></div>
+        <div class="items__exp"></div>
+      </div>
+    </div>
+    <!--<script src="js/index.js"></script>-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

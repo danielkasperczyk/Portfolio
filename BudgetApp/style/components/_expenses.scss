@@ -1,0 +1,32 @@
+.expenses {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+
+  & > * {
+    font-size: 1.4rem;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 10;
+  }
+  &__delete {
+    font-size: 1.75rem;
+    flex: 1;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+}
+.greenGradient {
+  background-image: $green-linear;
+}
+
+.redGradient {
+  background-image: $red-linear;
+}

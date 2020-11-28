@@ -1,0 +1,31 @@
+.type {
+  display: flex;
+  justify-content: center;
+
+  &__slider {
+    width: 50px;
+    height: 20px;
+    background-color: #2cde56;
+    border-radius: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;
+
+    &-dot {
+      height: 18px;
+      width: 18px;
+      border-radius: 100px;
+      background-color: #1a5829;
+      position: absolute;
+      border: none;
+      left: 0;
+      transition: all 0.2s;
+      &--move-left {
+        left: 31px;
+      }
+    }
+  }
+}

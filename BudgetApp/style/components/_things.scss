@@ -1,0 +1,36 @@
+.things {
+  display: flex;
+  &__input {
+    padding: 0.5rem;
+    border: 1px solid #13c43d;
+    border-radius: 3px;
+    outline: 0;
+    width: 60%;
+  }
+  &__cost {
+    padding: 0.5rem;
+    border: 1px solid #13c43d;
+    border-radius: 3px;
+    outline: 0;
+    width: 20%;
+    margin-left: 5px;
+  }
+  &__btn {
+    margin-left: 5px;
+    background-color: #13c43d;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    padding: 0 1rem;
+    outline: 0;
+  }
+  @media only screen and (min-width: 568px) {
+    &__input,
+    &__cost,
+    &__btn {
+      margin: 0 auto;
+      height: 3rem;
+    }
+  }
+}
